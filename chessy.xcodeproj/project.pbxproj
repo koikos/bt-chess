@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212AD8B42932C40F007E3405 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212AD8B32932C40F007E3405 /* DevicesView.swift */; };
+		212AD8B62932C424007E3405 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212AD8B52932C424007E3405 /* Scanner.swift */; };
+		212AD8B92932C4D2007E3405 /* ScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212AD8B82932C4D2007E3405 /* ScannerDelegate.swift */; };
 		2188E1C929180E9B005424EC /* ChessyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188E1C829180E9B005424EC /* ChessyApp.swift */; };
 		2188E1CB29180E9B005424EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188E1CA29180E9B005424EC /* ContentView.swift */; };
 		2188E1CD29180E9C005424EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2188E1CC29180E9C005424EC /* Assets.xcassets */; };
@@ -14,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		212AD8B32932C40F007E3405 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
+		212AD8B52932C424007E3405 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
+		212AD8B82932C4D2007E3405 /* ScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerDelegate.swift; sourceTree = "<group>"; };
+		212AD8BA2932C57A007E3405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2188E1C529180E9B005424EC /* chessy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chessy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2188E1C829180E9B005424EC /* ChessyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessyApp.swift; sourceTree = "<group>"; };
 		2188E1CA29180E9B005424EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +39,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		212AD8B72932C42A007E3405 /* ListingDevicesNearby */ = {
+			isa = PBXGroup;
+			children = (
+				212AD8B32932C40F007E3405 /* DevicesView.swift */,
+				212AD8B52932C424007E3405 /* Scanner.swift */,
+				212AD8B82932C4D2007E3405 /* ScannerDelegate.swift */,
+			);
+			path = ListingDevicesNearby;
+			sourceTree = "<group>";
+		};
 		2188E1BC29180E9B005424EC = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +68,12 @@
 		2188E1C729180E9B005424EC /* chessy */ = {
 			isa = PBXGroup;
 			children = (
+				212AD8BA2932C57A007E3405 /* Info.plist */,
 				2188E1C829180E9B005424EC /* ChessyApp.swift */,
 				2188E1CA29180E9B005424EC /* ContentView.swift */,
 				2188E1CC29180E9C005424EC /* Assets.xcassets */,
 				2188E1CE29180E9C005424EC /* Preview Content */,
+				212AD8B72932C42A007E3405 /* ListingDevicesNearby */,
 			);
 			path = chessy;
 			sourceTree = "<group>";
@@ -137,6 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				212AD8B92932C4D2007E3405 /* ScannerDelegate.swift in Sources */,
+				212AD8B62932C424007E3405 /* Scanner.swift in Sources */,
+				212AD8B42932C40F007E3405 /* DevicesView.swift in Sources */,
 				2188E1CB29180E9B005424EC /* ContentView.swift in Sources */,
 				2188E1C929180E9B005424EC /* ChessyApp.swift in Sources */,
 			);
@@ -270,8 +292,9 @@
 				DEVELOPMENT_TEAM = 7FEJ9Q5RV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Chessy;
+				INFOPLIST_FILE = chessy/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.board-games";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,8 +324,9 @@
 				DEVELOPMENT_TEAM = 7FEJ9Q5RV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Chessy;
+				INFOPLIST_FILE = chessy/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.board-games";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
