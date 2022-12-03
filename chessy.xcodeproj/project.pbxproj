@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		212AD8B42932C40F007E3405 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212AD8B32932C40F007E3405 /* DevicesView.swift */; };
 		212AD8B62932C424007E3405 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212AD8B52932C424007E3405 /* Scanner.swift */; };
-		212AD8B92932C4D2007E3405 /* ScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212AD8B82932C4D2007E3405 /* ScannerDelegate.swift */; };
+		2185F3A4293387A7007ECB43 /* DeviceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2185F3A3293387A7007ECB43 /* DeviceRow.swift */; };
+		2185F3A629338A59007ECB43 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2185F3A529338A59007ECB43 /* DeviceModel.swift */; };
 		2188E1C929180E9B005424EC /* ChessyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188E1C829180E9B005424EC /* ChessyApp.swift */; };
 		2188E1CB29180E9B005424EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2188E1CA29180E9B005424EC /* ContentView.swift */; };
 		2188E1CD29180E9C005424EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2188E1CC29180E9C005424EC /* Assets.xcassets */; };
@@ -19,8 +20,9 @@
 /* Begin PBXFileReference section */
 		212AD8B32932C40F007E3405 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
 		212AD8B52932C424007E3405 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
-		212AD8B82932C4D2007E3405 /* ScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerDelegate.swift; sourceTree = "<group>"; };
 		212AD8BA2932C57A007E3405 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2185F3A3293387A7007ECB43 /* DeviceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRow.swift; sourceTree = "<group>"; };
+		2185F3A529338A59007ECB43 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 		2188E1C529180E9B005424EC /* chessy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chessy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2188E1C829180E9B005424EC /* ChessyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessyApp.swift; sourceTree = "<group>"; };
 		2188E1CA29180E9B005424EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,8 +45,9 @@
 			isa = PBXGroup;
 			children = (
 				212AD8B32932C40F007E3405 /* DevicesView.swift */,
+				2185F3A3293387A7007ECB43 /* DeviceRow.swift */,
+				2185F3A529338A59007ECB43 /* DeviceModel.swift */,
 				212AD8B52932C424007E3405 /* Scanner.swift */,
-				212AD8B82932C4D2007E3405 /* ScannerDelegate.swift */,
 			);
 			path = ListingDevicesNearby;
 			sourceTree = "<group>";
@@ -156,9 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				212AD8B92932C4D2007E3405 /* ScannerDelegate.swift in Sources */,
 				212AD8B62932C424007E3405 /* Scanner.swift in Sources */,
+				2185F3A629338A59007ECB43 /* DeviceModel.swift in Sources */,
 				212AD8B42932C40F007E3405 /* DevicesView.swift in Sources */,
+				2185F3A4293387A7007ECB43 /* DeviceRow.swift in Sources */,
 				2188E1CB29180E9B005424EC /* ContentView.swift in Sources */,
 				2188E1C929180E9B005424EC /* ChessyApp.swift in Sources */,
 			);
@@ -289,7 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"chessy/Preview Content\"";
-				DEVELOPMENT_TEAM = 7FEJ9Q5RV7;
+				DEVELOPMENT_TEAM = RZTLL38LX7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = chessy/Info.plist;
@@ -321,7 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"chessy/Preview Content\"";
-				DEVELOPMENT_TEAM = 7FEJ9Q5RV7;
+				DEVELOPMENT_TEAM = RZTLL38LX7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = chessy/Info.plist;
